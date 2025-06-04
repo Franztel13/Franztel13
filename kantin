@@ -1,0 +1,16 @@
+CREATE DATABASE kantin;
+USE kantin;
+
+CREATE TABLE produk (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama VARCHAR(100),
+  harga INT,
+  stok INT,
+  gambar VARCHAR(100)
+);
+
+INSERT INTO produk (nama, harga, stok, gambar) VALUES
+('Nasi Goreng', 15000, 10, 'nasgor.jpg'),
+('Es Teh Manis', 5000, 15, 'esteh.jpg'),
+('Batagor', 10000, 12, 'batagor.jpg'),
+('Es Jeruk', 6000, 8, 'esjeruk.jpg');
